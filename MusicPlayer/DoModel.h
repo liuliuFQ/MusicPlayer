@@ -9,14 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface DoModel : NSObject
-{
-  
-    NSMutableArray * musicArray;//歌曲数组
-//    NSMutableArray *timeArray;//时间数组
-//    NSMutableDictionary * LRCDictionary;//歌词字典
-    NSInteger lrcLineNumber;//歌词行数
-
-}
 
 +(id)initSingleModel;
 -(NSDictionary *)LRCWithName:(NSString*)songName;
