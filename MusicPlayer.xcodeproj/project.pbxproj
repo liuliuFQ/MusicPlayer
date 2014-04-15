@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F993FA118FC0F47004A0144 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F993FA018FC0F47004A0144 /* Reveal.framework */; };
 		0F993FA318FC0FD8004A0144 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F993FA218FC0FD8004A0144 /* CFNetwork.framework */; };
 		0F993FA518FC0FE6004A0144 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F993FA418FC0FE6004A0144 /* QuartzCore.framework */; };
 		0F993FA718FC101E004A0144 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F993FA618FC101E004A0144 /* AppDelegate.m */; };
@@ -53,7 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F993FA018FC0F47004A0144 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		0F993FA218FC0FD8004A0144 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0F993FA418FC0FE6004A0144 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0F993FA618FC101E004A0144 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				0F9B9CA818FC0E210005D734 /* CoreGraphics.framework in Frameworks */,
 				0F9B9CAA18FC0E210005D734 /* UIKit.framework in Frameworks */,
 				0F9B9CA618FC0E210005D734 /* Foundation.framework in Frameworks */,
-				0F993FA118FC0F47004A0144 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +179,6 @@
 		0F9B9C9918FC0E200005D734 = {
 			isa = PBXGroup;
 			children = (
-				0F993FA018FC0F47004A0144 /* Reveal.framework */,
 				0F9B9CAB18FC0E210005D734 /* MusicPlayer */,
 				0F9B9CC418FC0E220005D734 /* MusicPlayerTests */,
 				0F9B9CA418FC0E210005D734 /* Frameworks */,
@@ -498,11 +494,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MusicPlayer/MusicPlayer-Prefix.pch";
 				INFOPLIST_FILE = "MusicPlayer/MusicPlayer-Info.plist";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					Reveal,
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -520,11 +512,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MusicPlayer/MusicPlayer-Prefix.pch";
 				INFOPLIST_FILE = "MusicPlayer/MusicPlayer-Info.plist";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					Reveal,
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
