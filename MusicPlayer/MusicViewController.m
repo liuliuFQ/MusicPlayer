@@ -141,6 +141,14 @@
     return [timeArray count];
 
 }
+/**
+ *  其中调用了宏
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;{
     static NSString * identifier = @"cell";
     __autoreleasing MyCell * cell = [tableView   dequeueReusableCellWithIdentifier:identifier];
