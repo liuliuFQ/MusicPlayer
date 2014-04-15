@@ -9,6 +9,11 @@
 #import "DoModel.h"
 
 @implementation DoModel
+/**
+ *  单例
+ *
+ *  @return 创建一个对象，调用一下方法
+ */
 +(id)initSingleModel{
    static DoModel * doModel = nil;
     static dispatch_once_t onceToken;
